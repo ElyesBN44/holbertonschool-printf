@@ -13,7 +13,6 @@ selecter_t tab[] = {
 {'c', print_char},
 {'s', print_string},
 {'%', print_percent},
-{'i', print_int},
 {'\0', NULL},
 };
 for (i = 0; tab[i].c != '\0'; i++)

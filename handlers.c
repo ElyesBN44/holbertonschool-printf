@@ -47,7 +47,3 @@ return(1);
  * @args: The integer to print.
  * Return: The number of integers printed.
 */
-int print_int(va_list args)
-{
-
-}

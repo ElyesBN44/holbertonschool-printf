@@ -17,8 +17,8 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int print_char(va_list args);
 int print_string(va_list args);
-int print_int(va_list);
 int print_percent(__attribute__ ((unused)) va_list);
+int print_int(va_list);
 int (*selector(char specifier))(va_list args);
 
 
