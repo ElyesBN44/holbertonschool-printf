@@ -36,6 +36,11 @@
                 <td style="padding: 10px; border: 1px solid #ddd;">String of characters</td>
                 <td style="padding: 10px; border: 1px solid #ddd;"><code>Elyess Yassine </code></td>
             </tr>
+             <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;"><code>%d or %i</code></td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Signed integer</td>
+                <td style="padding: 10px; border: 1px solid #ddd;"><code>1521, -1523 </code></td>
+            </tr>
         </tbody>
     </table>
 </div>
@@ -66,6 +71,10 @@
                 <td style="border: 1px solid #bdc3c7; padding: 8px;">selector.c</td>
                 <td style="border: 1px solid #bdc3c7; padding: 8px;">This file contains logic to select the correct handler based on the conversion specifier. It matches the format specifiers in the format string with the appropriate function for processing and output.</td>
             </tr>
+             <tr>
+                <td style="border: 1px solid #bdc3c7; padding: 8px;">print_decimal.c</td>
+               <td style="border: 1px solid #bdc3c7; padding: 8px;">This file contains the <code>print_decimal</code> function, which handles the printing of decimal integers. It processes both positive and negative values, converts the integer to its character representation, and outputs each digit using the <code>_putchar</code> function.</td>
+            </tr>
         </tbody>
     </table>
 </div>
@@ -73,7 +82,7 @@
 <p>To verify the functionality of the custom _printf function, a main.c file was used. This file tests various format specifiers and compares the output from _printf with that of the standard printf. It includes tests for different data types, such as integers, characters, and strings, ensuring that the custom function works as expected across a wide range of inputs. Below is the image of the code snippet used for testing the implementation.</p>
 
 <div>
-<img src="https://imgur.com/l38bic6.png" alt="main.c code" style="max-width: 50%; height: auto;">
+<img src="https://imgur.com/l38bic6.png" alt="main.c code" style="max-width: 40%; height: auto;">
 </div>
 <p>The code must be compiled this way:</p>
 <pre><code>gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c</code></pre>
