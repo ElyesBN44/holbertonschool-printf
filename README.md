@@ -73,5 +73,23 @@
 <p>To verify the functionality of the custom _printf function, a main.c file was used. This file tests various format specifiers and compares the output from _printf with that of the standard printf. It includes tests for different data types, such as integers, characters, and strings, ensuring that the custom function works as expected across a wide range of inputs. Below is the image of the code snippet used for testing the implementation.</p>
 
 <div>
-<img src="https://imgur.com/l38bic6.png" alt="main.c code" style="max-width: 80%; height: auto;">
+<img src="https://imgur.com/l38bic6.png" alt="main.c code" style="max-width: 50%; height: auto;">
 </div>
+<p>The code must be compiled this way:</p>
+<pre><code>gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c</code></pre>
+
+<h2>Project Tasks</h2>
+<h3>Task 0: I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life</h3>
+<p>Create a function called <code>_printf</code> that produces output based on a given format. The function should handle the following conversion specifiers: <code>%c</code>, <code>%s</code>, and <code>%%</code>. The function should return the number of characters printed (excluding the null byte used to end output to strings). Output should be written to the standard output stream. Buffer handling, flags, field width, precision, and length modifiers are not required.</p>
+<h3>Task 1: Education is when you read the fine print. Experience is what you get if you don't</h3>
+<p>Extend the <code>_printf</code> function to handle the following conversion specifiers: <code>%d</code> and <code>%i</code>. You do not need to handle flag characters, field width, precision, or length modifiers. The function should process these specifiers and print the corresponding integer values, ensuring the output is correct when using both specifiers.</p>
+<h3>Task 2: Just because it's in print doesn't mean it's the gospel</h3>
+<p>For this task, create a man page for your <code>_printf</code> function.</p>
+
+<h2>Authors</h2>
+<p>This project was completed by:</p>
+<ul>
+ <li><strong>Yassine Gharbi</strong> - <a href="https://github.com/Yassine-Gharbi86">GitHub</a></li>
+ <li><strong>Elyes Ben Naceur</strong> - <a href="https://github.com/ElyesBN44">GitHub</a></li>
+ </ul>
+<p>We worked together to implement and test the custom <code>_printf</code> function.</p>
