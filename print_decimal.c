@@ -13,7 +13,7 @@ d = va_arg(Ent, int);
 if (d < 0)
 {
 name = (d * -1);
-acccount += _putchar('-');
+account += _putchar('-');
 }
 else
 name = d;
