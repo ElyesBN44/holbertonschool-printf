@@ -1,0 +1,103 @@
+% _printf(3)                            Project Documentation                        _printf(3)
+
+NAME
+       _printf - A simple version of the printf function
+
+SYNOPSIS
+       #include "main.h"
+
+       int _printf(const char *format, ...);
+
+DESCRIPTION
+       _printf produces output according to a format string and a variable number of arguments.
+       It is a simplified version of the standard printf function, but only handles a few basic
+       conversion specifiers.
+
+       The format string is composed of zero or more directives, and the function will output
+       the corresponding characters for each directive. The directives specify how to interpret
+       the subsequent arguments. The `_printf` function can handle the following conversion specifiers:
+
+       c   - Prints a single character.
+       s   - Prints a string of characters.
+       %   - Prints a literal percent sign (`%`).
+       d   - Prints an integer in decimal format.
+       i   - Prints an integer in decimal format (same as `d`).
+
+       Conversion specifiers are preceded by the '%' symbol, which signals to `_printf` to
+       format the argument accordingly.
+
+       The function returns the total number of characters printed, excluding the null byte that
+       terminates the output string.
+
+       The function does **not** handle the following features of the standard `printf`:
+       - Flag characters (e.g., `-`, `+`, `0`, `#`, `space`)
+       - Field width
+       - Precision
+       - Length modifiers (e.g., `l`, `h`)
+
+       **Note:** Unlike the standard `printf` function, there is no buffer handling or complex
+       formatting options in `_printf`. The focus is on simplicity and handling only basic cases.
+
+RETURN VALUE
+       On success, the function returns the number of characters printed (excluding the null byte).
+       If the function encounters an invalid format specifier, it returns `-1`.
+
+EXAMPLES
+       Example 1:
+       _printf("Hello, %s!\n", "World");
+       Output: Hello, World!
+       Returns: 14
+
+       Example 2:
+       _printf("Character: %c\n", 'A');
+       Output: Character: A
+       Returns: 14
+
+       Example 3:
+       _printf("Percent sign: %%\n");
+       Output: Percent sign: %
+       Returns: 17
+
+       Example 4:
+       _printf("Number: %d\n", 42);
+       Output: Number: 42
+       Returns: 14
+
+PROJECT REQUIREMENTS
+       General:
+       - Allowed editors: vi, vim, emacs
+       - All your files will be compiled on Ubuntu 20.04 LTS using `gcc` with the following options:
+         `-Wall -Werror -Wextra -pedantic -std=gnu89`
+       - All your files should end with a new line.
+       - A `README.md` file at the root of the project folder is mandatory.
+       - Your code should follow the **Betty style** for formatting. It will be checked using `betty-style.pl` and `betty-doc.pl`.
+       - No global variables allowed.
+       - No more than 5 functions per file.
+       - All your function prototypes should be included in a header file called `main.h`. Ensure the header is include guarded.
+       - Do not push any file containing a `main` function in the root directory. Use a test folder for testing.
+       - Do not push your own `main.c` file, as we will use our own main files for testing.
+       - The `_putchar` function will not be provided; you must implement it yourself.
+
+       Compilation:
+       - Your code will be compiled with:
+         ```sh
+         gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
+         ```
+       - Be careful not to push a `main.c` file with your project; it should only exist in a test folder.
+       - The main function files we use during compilation may differ from the examples shown.
+
+       Authorized functions and macros:
+       - `write` (man 2 write)
+       - `malloc` (man 3 malloc)
+       - `free` (man 3 free)
+       - `va_start` (man 3 va_start)
+       - `va_end` (man 3 va_end)
+       - `va_copy` (man 3 va_copy)
+       - `va_arg` (man 3 va_arg)
+
+SEE ALSO
+       printf(3), man(1), printf(3) in the C library documentation for more advanced formatting options.
+
+BUGS
+       The implementation does not currently handle complex format specifiers, such as flags,
+       field width, precision, or length modifiers.
