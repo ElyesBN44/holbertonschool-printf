@@ -34,16 +34,20 @@ return (i);
 /**
  * print_percent - Prints %.
  * @args: Va_list.
- * Return: Count of percentage. 
+ * Return: Count of percentage.
 */
 int print_percent(va_list args)
 {
 (void)args;
 _putchar('%');
-return(1);
+return (1);
 }
 /**
  * print_int - Prints an integer.
  * @args: The integer to print.
  * Return: The number of integers printed.
 */
+int print_int(va_list args)
+{
+return (print_decimal(args));
+}
