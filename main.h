@@ -5,10 +5,11 @@
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
-/** 
-* struct select - connects specifiers with the corresponding print functions.
-* @c: format specifier.
-* @f: pointer to the associated print function.
+
+/**
+ * struct select - connects specifiers with the corresponding print functions.
+ * @c: format specifier.
+ * @f: pointer to the associated print function.
 */
 typedef struct select
 {
@@ -23,7 +24,4 @@ int print_percent(__attribute__ ((unused)) va_list);
 int print_int(va_list);
 int print_decimal(va_list);
 int (*selector(char specifier))(va_list args);
-
-
-
 #endif
