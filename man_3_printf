@@ -95,9 +95,6 @@ PROJECT REQUIREMENTS
        - `va_copy` (man 3 va_copy)
        - `va_arg` (man 3 va_arg)
 
-SEE ALSO
-       printf(3), man(1), printf(3) in the C library documentation for more advanced formatting options.
-
 BUGS
        The implementation does not currently handle complex format specifiers, such as flags,
        field width, precision, or length modifiers.
