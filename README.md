@@ -18,7 +18,9 @@
 <div>
 <h2>How <code>_printf</code> Works</h2>
 <p>The flowchart below outlines the logical steps <code>_printf</code> follows to process the format string and produce the desired output.</p>
+<div style="text-align: center;">
 <img src="https://imgur.com/JVRWMts.png" alt="How _printf Works Flowchart" style="display: block; margin-left: auto; margin-right: auto; width: 50%; border: 1px solid #bdc3c7; padding: 10px;">
+</div>
 </div>
 <h2 style="text-align: center; color: #2c3e50;">Patterns</h2>
 <div style="margin: 0 auto; max-width: 800px; text-align: center;">
