@@ -6,9 +6,9 @@
 #include <stdlib.h>
 
 /**
- * struct select - connects specifiers with the corresponding print functions.
- * @c: format specifier.
- * @f: pointer to the associated print function.
+* struct select - connects specifiers with the corresponding print functions.
+* @c: format specifier.
+* @f: pointer to the associated print function.
 */
 typedef struct select
 {
