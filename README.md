@@ -86,12 +86,10 @@
 #include &lt;limits.h&gt;
 #include &lt;stdio.h&gt;
 #include "main.h"
-
 /**
- * main - Entry point
- *
- * Return: Always 0
- */
+* main - Entry point
+* Return: Always 0
+*/
 int main(void)
 {
     int len;
