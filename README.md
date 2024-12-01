@@ -15,6 +15,11 @@
         appropriate output.
     </p>
 </div>
+<div>
+<h2>How <code>_printf</code> Works</h2>
+<p>The flowchart below outlines the logical steps <code>_printf</code> follows to process the format string and produce the desired output.</p>
+<img src="https://imgur.com/a/kxG7xO9.png" alt="How _printf Works Flowchart" style="width: 70%; border: 1px solid #bdc3c7; padding: 10px;">
+</div>
 <h2 style="text-align: center; color: #2c3e50;">Patterns</h2>
 <div style="margin: 0 auto; max-width: 800px; text-align: center;">
     <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 16px; border: 1px solid #ddd;">
@@ -83,7 +88,6 @@
 
 <div>
 <pre><code>
-```c
 #include &lt;limits.h&gt;
 #include &lt;stdio.h&gt;
 #include "main.h"
