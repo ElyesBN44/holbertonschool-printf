@@ -86,7 +86,7 @@
     </table>
 </div>
 <h2>main.c</h2>
-<p>To verify the functionality of the custom _printf function, a main.c file was used. This file tests various format specifiers and compares the output from _printf with that of the standard printf. It includes tests for different data types, such as integers, characters, and strings, ensuring that the custom function works as expected across a wide range of inputs. Below is the image of the code snippet used for testing the implementation.</p>
+<p>To verify the functionality of the custom _printf function, a main.c file was used. This file tests various format specifiers and compares the output from _printf with that of the standard printf. It includes tests for different data types, such as integers, characters, and strings, ensuring that the custom function works as expected across a wide range of inputs.</p>
 
 <div>
 <pre><code>

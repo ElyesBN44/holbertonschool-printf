@@ -4,7 +4,6 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdlib.h>
-#include <unistd.h>
 
 /**
  * struct select - connects specifiers with the corresponding print functions.
