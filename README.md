@@ -141,11 +141,34 @@ git clone https://github.com/ElyesBN44/holbertonschool-printf
 cd /holbertonschool-printf
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 </code></pre>
-<h2>Requirments</h2>
+<h2>Requirements</h2>
 <ul>
 <li><code>Operating System:</code> Linux or macOS.</li>
 <li><code>Compiler:</code> gcc.</li>
 <li>Following <code>Betty coding style</code> guidelines.
+</ul>
+<h2>Examples and expected output</h2>
+<pre><code>
+ Example 1:
+       _printf("Hello, %s!\n", "World");
+       Output: Hello, World!
+       Returns: 14
+
+       Example 2:
+       _printf("Character: %c\n", 'A');
+       Output: Character: A
+       Returns: 14
+
+       Example 3:
+       _printf("Percent sign: %%\n");
+       Output: Percent sign: %
+       Returns: 17
+
+       Example 4:
+       _printf("Number: %d\n", 42);
+       Output: Number: 42
+       Returns: 14
+</code></pre>
 <h2>Project Tasks</h2>
 <h3>Task 0: I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life</h3>
 <p>Create a function called <code>_printf</code> that produces output based on a given format. The function should handle the following conversion specifiers: <code>%c</code>, <code>%s</code>, and <code>%%</code>. The function should return the number of characters printed (excluding the null byte used to end output to strings). Output should be written to the standard output stream. Buffer handling, flags, field width, precision, and length modifiers are not required.</p>
