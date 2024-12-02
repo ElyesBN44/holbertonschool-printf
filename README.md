@@ -149,22 +149,22 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 </ul>
 <h2>Examples and expected output</h2>
 <pre><code>
- Example 1:
+Example 1:
        _printf("Hello, %s!\n", "World");
        Output: Hello, World!
        Returns: 14
 
-       Example 2:
+Example 2:
        _printf("Character: %c\n", 'A');
        Output: Character: A
        Returns: 14
 
-       Example 3:
+Example 3:
        _printf("Percent sign: %%\n");
        Output: Percent sign: %
        Returns: 17
 
-       Example 4:
+Example 4:
        _printf("Number: %d\n", 42);
        Output: Number: 42
        Returns: 14
