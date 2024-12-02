@@ -134,8 +134,13 @@ int main(void)
 }
 </code></pre>
 </div>
-<p>The code must be compiled this way:</p>
-<pre><code>gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c</code></pre>
+<h2>Compilation/Installation</h2>
+<p>To use <code>_printf</code> in your project, clone the repository and compile the source files:</p>
+<pre><code>
+git clone https://github.com/ElyesBN44/holbertonschool-printf
+cd /holbertonschool-printf
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+</code></pre>
 
 <h2>Project Tasks</h2>
 <h3>Task 0: I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life</h3>
